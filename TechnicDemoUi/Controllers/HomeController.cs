@@ -79,11 +79,11 @@ namespace TechnicDemoUi.Controllers
             return View(paritionCollection);
         }
 
-        public IActionResult About(BirthdayCelebration birthday)
+        public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View(birthday);
+            return View();
         }
 
         [HttpPost]
@@ -100,11 +100,11 @@ namespace TechnicDemoUi.Controllers
             //else
 
         }
-            public IActionResult Contact()
+            public IActionResult Contact(BirthdayCelebration birthday)
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Birthday Processing.";
 
-            return View();
+            return View(birthday);
         }
 
         public IActionResult Error()
