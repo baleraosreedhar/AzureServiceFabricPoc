@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace TechnicCharacterCountService
 {
-    [EventSource(Name = "MyCompany-MyCalculatorApplication-TechnicCharacterCountService")]
+    [EventSource(Name = "TechnicDemo-MyCalculatorApplication-TechnicCharacterCountService")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

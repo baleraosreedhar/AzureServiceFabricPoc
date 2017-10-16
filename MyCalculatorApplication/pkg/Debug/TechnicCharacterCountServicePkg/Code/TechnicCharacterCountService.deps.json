@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.6.1/win7-x64",
-    "signature": "5ff7e64ca14f3230f439e7b166d7d0e0debfc343"
+    "signature": "200095a2da8ec790d1aa6ac982f4e1252245ae08"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,9 @@
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.3",
+          "Microsoft.Diagnostics.EventFlow": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.ServiceFabric": "1.1.4",
           "Microsoft.Extensions.Logging.Debug": "1.1.2",
           "Microsoft.ServiceFabric": "5.7.198",
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "2.7.198",
@@ -1027,7 +1030,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Parallel": "4.0.1",
+          "System.Threading.Tasks.Parallel": "4.3.0",
           "System.Threading.Thread": "4.0.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
@@ -1047,6 +1050,80 @@
         }
       },
       "Microsoft.CSharp/4.3.0": {},
+      "Microsoft.Diagnostics.EventFlow/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.Inputs.EventSource": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.Trace": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.EventHub": "1.1.0"
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Core/1.1.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.1.2",
+          "Microsoft.Extensions.Configuration.Binder": "1.1.2",
+          "Microsoft.Extensions.Configuration.Json": "1.1.2",
+          "System.Collections.Immutable": "1.3.0",
+          "System.Threading.Tasks.Dataflow": "4.7.0",
+          "System.Threading.Tasks.Parallel": "4.3.0",
+          "Validation": "2.3.7"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.EtwUtilities": "1.1.0"
+        },
+        "compile": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.2.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Newtonsoft.Json": "9.0.1",
+          "Validation": "2.3.7",
+          "WindowsAzure.ServiceBus": "3.3.2"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.ServiceFabric": "5.7.198"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
+        }
+      },
       "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
         "compile": {
           "lib/net451/Microsoft.DotNet.PlatformAbstractions.dll": {}
@@ -1682,12 +1759,17 @@
       "System.Text.RegularExpressions/4.3.0": {},
       "System.Threading/4.3.0": {},
       "System.Threading.Tasks/4.3.0": {},
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.3.0": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.Threading.Tasks.Parallel/4.0.1": {},
+      "System.Threading.Tasks.Parallel/4.3.0": {},
       "System.Threading.Thread/4.0.0": {},
       "System.Threading.Timer/4.3.0": {},
       "System.Xml.ReaderWriter/4.3.0": {
@@ -1702,6 +1784,16 @@
         "dependencies": {
           "System.Xml.XPath": "4.0.1"
         }
+      },
+      "Validation/2.3.7": {
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "WindowsAzure.ServiceBus/3.3.2": {
+        "compile": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win7-x64": {
@@ -1710,6 +1802,9 @@
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.3",
+          "Microsoft.Diagnostics.EventFlow": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.ServiceFabric": "1.1.4",
           "Microsoft.Extensions.Logging.Debug": "1.1.2",
           "Microsoft.ServiceFabric": "5.7.198",
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "2.7.198",
@@ -2374,7 +2469,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Parallel": "4.0.1",
+          "System.Threading.Tasks.Parallel": "4.3.0",
           "System.Threading.Thread": "4.0.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
@@ -2394,6 +2489,80 @@
         }
       },
       "Microsoft.CSharp/4.3.0": {},
+      "Microsoft.Diagnostics.EventFlow/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.Inputs.EventSource": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.Trace": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.EventHub": "1.1.0"
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Core/1.1.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.1.2",
+          "Microsoft.Extensions.Configuration.Binder": "1.1.2",
+          "Microsoft.Extensions.Configuration.Json": "1.1.2",
+          "System.Collections.Immutable": "1.3.0",
+          "System.Threading.Tasks.Dataflow": "4.7.0",
+          "System.Threading.Tasks.Parallel": "4.3.0",
+          "Validation": "2.3.7"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.Diagnostics.EventFlow.EtwUtilities": "1.1.0"
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.2.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Newtonsoft.Json": "9.0.1",
+          "Validation": "2.3.7",
+          "WindowsAzure.ServiceBus": "3.3.2"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.6",
+          "Microsoft.ServiceFabric": "5.7.198"
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
+        }
+      },
       "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
         "runtime": {
           "lib/net451/Microsoft.DotNet.PlatformAbstractions.dll": {}
@@ -3041,12 +3210,17 @@
       "System.Text.RegularExpressions/4.3.0": {},
       "System.Threading/4.3.0": {},
       "System.Threading.Tasks/4.3.0": {},
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.3.0": {
         "runtime": {
           "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.Threading.Tasks.Parallel/4.0.1": {},
+      "System.Threading.Tasks.Parallel/4.3.0": {},
       "System.Threading.Thread/4.0.0": {
         "runtime": {
           "lib/net46/System.Threading.Thread.dll": {}
@@ -3075,6 +3249,16 @@
         },
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Validation/2.3.7": {
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "WindowsAzure.ServiceBus/3.3.2": {
+        "runtime": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
         }
       }
     }
@@ -3448,6 +3632,62 @@
       "sha512": "sha512-P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "path": "microsoft.csharp/4.3.0",
       "hashPath": "microsoft.csharp.4.3.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XaDDBjbs+0JIpHLMXYH1TB0qgNvazFxmZmi7qbW05tzk5t/GeQueCdykEUgGydTNv15oGMSANm2bp40cJlXhzA==",
+      "path": "microsoft.diagnostics.eventflow/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.Core/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uMJX8RqgNI6pcXEsfzBUzW8CpJPUUKLNM7dAgKZkeaqOWjnL5PatqDBkjn3oKKkTH2gOn6fSYuW46sf83VfIRQ==",
+      "path": "microsoft.diagnostics.eventflow.core/1.1.6",
+      "hashPath": "microsoft.diagnostics.eventflow.core.1.1.6.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OQ7GUXRL3kHjDXz2iOZfCfBrilZXLL0Z62V3/JUIDUD2cbRgH6AcBq7vJQZqQUQHtNrtciSWmKkUYJoumgSLXQ==",
+      "path": "microsoft.diagnostics.eventflow.etwutilities/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.etwutilities.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VJFOBouGMKrPJKcW/TyxDq6ySjM7mS8KAkcQJ1br4Zk2gRu1TQGooCSsSB/Qao7KmcusrgJ19CqByz0lQTxDtw==",
+      "path": "microsoft.diagnostics.eventflow.inputs.eventsource/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.inputs.eventsource.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-10aWGCQ0+50Hq8+2HwJuQyZrBlMwVHpsg+j1YDx9/EXQjRK1y3JBthd8+rm5uS3vlev4Xht6FrWhTYKComd5mQ==",
+      "path": "microsoft.diagnostics.eventflow.inputs.trace/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.inputs.trace.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pi5JA2aiytHNyCMGPl4curuzFNWusNL7lK4XbkXbQ2nt9yxau+LP9lStRXV2LiiHBZXIDgu9G0KTBN1LTdxitg==",
+      "path": "microsoft.diagnostics.eventflow.outputs.applicationinsights/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.outputs.applicationinsights.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8dVliCjYqMYs7CXBGTyHM+QX9Gs8ISGtTNrO1Vx6iIGXmmvPjSzU6Ki5KmrbeEbU5Zk9RAuJPBEhnZ49OHdPDQ==",
+      "path": "microsoft.diagnostics.eventflow.outputs.eventhub/1.1.0",
+      "hashPath": "microsoft.diagnostics.eventflow.outputs.eventhub.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w2xEdY4hiyR/wRjD6aS4f97+123AcH98eT41y7VLcK+1aqwg2rJuTPtBtGTYiUKRHnl7L83RajIt0doscuGWjA==",
+      "path": "microsoft.diagnostics.eventflow.servicefabric/1.1.4",
+      "hashPath": "microsoft.diagnostics.eventflow.servicefabric.1.1.4.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
       "type": "package",
@@ -4163,6 +4403,13 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Tasks.Dataflow/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-355zftcqBubvV0idKrMYE32K1zKPEfPmHV39+Ip0G7Ia/mWx9C6MiLvIvJImkyKFcKA1H/tKvUBx/xXvN+LMCA==",
+      "path": "system.threading.tasks.dataflow/4.7.0",
+      "hashPath": "system.threading.tasks.dataflow.4.7.0.nupkg.sha512"
+    },
     "System.Threading.Tasks.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4170,12 +4417,12 @@
       "path": "system.threading.tasks.extensions/4.3.0",
       "hashPath": "system.threading.tasks.extensions.4.3.0.nupkg.sha512"
     },
-    "System.Threading.Tasks.Parallel/4.0.1": {
+    "System.Threading.Tasks.Parallel/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7Pc9t25bcynT9FpMvkUw4ZjYwUiGup/5cJFW72/5MgCG+np2cfVUMdh29u8d7onxX7d8PS3J+wL73zQRqkdrSA==",
-      "path": "system.threading.tasks.parallel/4.0.1",
-      "hashPath": "system.threading.tasks.parallel.4.0.1.nupkg.sha512"
+      "sha512": "sha512-MwTY7WOOHhh0LiSpstqf2iryW4fshBarVt+UwHzYlHZrYmRIiwZDzMITkt4NmxwtV9yg+1DYnM+deudTkiEPOQ==",
+      "path": "system.threading.tasks.parallel/4.3.0",
+      "hashPath": "system.threading.tasks.parallel.4.3.0.nupkg.sha512"
     },
     "System.Threading.Thread/4.0.0": {
       "type": "package",
@@ -4225,6 +4472,20 @@
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q==",
       "path": "system.xml.xpath.xdocument/4.0.1",
       "hashPath": "system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    },
+    "Validation/2.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0Z1idNcpSerS+WFiKbsBdEfMBifjtP5NwBxBP+hzzmDacPK9ghgHrn+gr43whERl4WZSIGm+/NCYzg3Bx+2wg==",
+      "path": "validation/2.3.7",
+      "hashPath": "validation.2.3.7.nupkg.sha512"
+    },
+    "WindowsAzure.ServiceBus/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u1l+SaQ1Ao+55iLrGhn3JsIws6Y6ERQCU9uuwhs6JCoqPZ0o2r3kCAnzW/bCCWlLYbJc1GVSQF8kM3ws/QUysg==",
+      "path": "windowsazure.servicebus/3.3.2",
+      "hashPath": "windowsazure.servicebus.3.3.2.nupkg.sha512"
     },
     "Microsoft.CSharp.Reference/4.0.0.0": {
       "type": "referenceassembly",

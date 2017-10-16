@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace TechnicBirthdayAgeService
 {
-    [EventSource(Name = "MyCompany-MyCalculatorApplication-TechnicBirthdayAgeService")]
+    [EventSource(Name = "TechnicDemo-MyCalculatorApplication-TechnicBirthdayAgeService")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

@@ -881,6 +881,109 @@
           "lib/net45/_._": {}
         }
       },
+      "Microsoft.Diagnostics.EventFlow/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.EventSource": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.Trace": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.EventHub": "1.1.0"
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Core/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "1.1.1",
+          "Microsoft.Extensions.Configuration.Json": "1.1.1",
+          "System.Collections.Immutable": "1.2.0",
+          "System.Threading.Tasks.Dataflow": "4.6.0",
+          "System.Threading.Tasks.Parallel": "4.0.1",
+          "Validation": "2.3.7"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.EtwUtilities": "1.1.0"
+        },
+        "compile": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.1.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Validation": "2.3.7",
+          "WindowsAzure.ServiceBus": "3.3.2"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.ServiceFabric": "5.1.163"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
+        }
+      },
       "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
         "type": "package",
         "compile": {
@@ -2316,6 +2419,15 @@
           "lib/net45/_._": {}
         }
       },
+      "System.Threading.Tasks.Dataflow/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
         "compile": {
@@ -2421,6 +2533,29 @@
         },
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Validation/2.3.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "WindowsAzure.ServiceBus/3.3.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
         }
       }
     },
@@ -3271,6 +3406,109 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.EventSource": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Inputs.Trace": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.Outputs.EventHub": "1.1.0"
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Core/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "1.1.1",
+          "Microsoft.Extensions.Configuration.Json": "1.1.1",
+          "System.Collections.Immutable": "1.2.0",
+          "System.Threading.Tasks.Dataflow": "4.6.0",
+          "System.Threading.Tasks.Parallel": "4.0.1",
+          "Validation": "2.3.7"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.Diagnostics.EventFlow.EtwUtilities": "1.1.0"
+        },
+        "compile": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.1.0",
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Validation": "2.3.7",
+          "WindowsAzure.ServiceBus": "3.3.2"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll": {}
+        }
+      },
+      "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Diagnostics.EventFlow.Core": "1.1.0",
+          "Microsoft.ServiceFabric": "5.1.163"
+        },
+        "compile": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll": {}
         }
       },
       "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
@@ -4624,6 +4862,15 @@
           "lib/net45/_._": {}
         }
       },
+      "System.Threading.Tasks.Dataflow/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
         "compile": {
@@ -4729,6 +4976,29 @@
         },
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Validation/2.3.7": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "WindowsAzure.ServiceBus/3.3.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/Microsoft.ServiceBus.dll": {}
         }
       }
     }
@@ -5485,6 +5755,92 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow/1.1.0": {
+      "sha512": "XaDDBjbs+0JIpHLMXYH1TB0qgNvazFxmZmi7qbW05tzk5t/GeQueCdykEUgGydTNv15oGMSANm2bp40cJlXhzA==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow/1.1.0",
+      "files": [
+        "content/eventFlowConfig.json",
+        "microsoft.diagnostics.eventflow.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.Core/1.1.0": {
+      "sha512": "dRKpXoCNUZhlOoxVs0pDLVotz6XowCIvN1Nbz/kwS8axkisol3CAYCFjfzo6+TiWhUW8tIy0NTkQrdEI1h3I8A==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.core/1.1.0",
+      "files": [
+        "lib/net451/Microsoft.Diagnostics.EventFlow.Core.dll",
+        "lib/netstandard1.6/Microsoft.Diagnostics.EventFlow.Core.dll",
+        "microsoft.diagnostics.eventflow.core.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.core.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.EtwUtilities/1.1.0": {
+      "sha512": "OQ7GUXRL3kHjDXz2iOZfCfBrilZXLL0Z62V3/JUIDUD2cbRgH6AcBq7vJQZqQUQHtNrtciSWmKkUYJoumgSLXQ==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.etwutilities/1.1.0",
+      "files": [
+        "lib/net451/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll",
+        "lib/netstandard1.6/Microsoft.Diagnostics.EventFlow.EtwUtilities.dll",
+        "microsoft.diagnostics.eventflow.etwutilities.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.etwutilities.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.Inputs.EventSource/1.1.0": {
+      "sha512": "VJFOBouGMKrPJKcW/TyxDq6ySjM7mS8KAkcQJ1br4Zk2gRu1TQGooCSsSB/Qao7KmcusrgJ19CqByz0lQTxDtw==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.inputs.eventsource/1.1.0",
+      "files": [
+        "lib/net46/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll",
+        "lib/netstandard1.6/Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll",
+        "microsoft.diagnostics.eventflow.inputs.eventsource.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.inputs.eventsource.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.Inputs.Trace/1.1.0": {
+      "sha512": "10aWGCQ0+50Hq8+2HwJuQyZrBlMwVHpsg+j1YDx9/EXQjRK1y3JBthd8+rm5uS3vlev4Xht6FrWhTYKComd5mQ==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.inputs.trace/1.1.0",
+      "files": [
+        "lib/net451/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll",
+        "lib/netstandard1.6/Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll",
+        "microsoft.diagnostics.eventflow.inputs.trace.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.inputs.trace.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights/1.1.0": {
+      "sha512": "Pi5JA2aiytHNyCMGPl4curuzFNWusNL7lK4XbkXbQ2nt9yxau+LP9lStRXV2LiiHBZXIDgu9G0KTBN1LTdxitg==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.outputs.applicationinsights/1.1.0",
+      "files": [
+        "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll",
+        "microsoft.diagnostics.eventflow.outputs.applicationinsights.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.outputs.applicationinsights.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.Outputs.EventHub/1.1.0": {
+      "sha512": "8dVliCjYqMYs7CXBGTyHM+QX9Gs8ISGtTNrO1Vx6iIGXmmvPjSzU6Ki5KmrbeEbU5Zk9RAuJPBEhnZ49OHdPDQ==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.outputs.eventhub/1.1.0",
+      "files": [
+        "lib/net451/Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll",
+        "microsoft.diagnostics.eventflow.outputs.eventhub.1.1.0.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.outputs.eventhub.nuspec"
+      ]
+    },
+    "Microsoft.Diagnostics.EventFlow.ServiceFabric/1.1.4": {
+      "sha512": "w2xEdY4hiyR/wRjD6aS4f97+123AcH98eT41y7VLcK+1aqwg2rJuTPtBtGTYiUKRHnl7L83RajIt0doscuGWjA==",
+      "type": "package",
+      "path": "microsoft.diagnostics.eventflow.servicefabric/1.1.4",
+      "files": [
+        "content/PackageRoot/Config/eventFlowConfig.json",
+        "lib/net451/Microsoft.Diagnostics.EventFlow.ServiceFabric.dll",
+        "microsoft.diagnostics.eventflow.servicefabric.1.1.4.nupkg.sha512",
+        "microsoft.diagnostics.eventflow.servicefabric.nuspec"
       ]
     },
     "Microsoft.DotNet.PlatformAbstractions/1.1.2": {
@@ -9005,6 +9361,21 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "System.Threading.Tasks.Dataflow/4.6.0": {
+      "sha512": "2hRjGu2r2jxRZ55wmcHO/WbdX+YAOz9x6FE8xqkHZgPaoFMKQZRe9dk8xTZIas8fRjxRmzawnTEWIrhlM+Un7w==",
+      "type": "package",
+      "path": "system.threading.tasks.dataflow/4.6.0",
+      "files": [
+        "System.Threading.Tasks.Dataflow.4.6.0.nupkg.sha512",
+        "System.Threading.Tasks.Dataflow.nuspec",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.XML",
+        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.XML",
+        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll"
+      ]
+    },
     "System.Threading.Tasks.Extensions/4.3.0": {
       "sha512": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "type": "package",
@@ -9414,6 +9785,43 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "Validation/2.3.7": {
+      "sha512": "D0Z1idNcpSerS+WFiKbsBdEfMBifjtP5NwBxBP+hzzmDacPK9ghgHrn+gr43whERl4WZSIGm+/NCYzg3Bx+2wg==",
+      "type": "package",
+      "path": "validation/2.3.7",
+      "files": [
+        "README.md",
+        "lib/dotnet/Validation.dll",
+        "lib/dotnet/Validation.xml",
+        "lib/netstandard1.0/Validation.dll",
+        "lib/netstandard1.0/Validation.xml",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.xml",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.xml",
+        "tools/2013/RequiresNotNull.snippet",
+        "tools/2013/RequiresNotNullOrEmpty.snippet",
+        "tools/2015/RequiresNotNull.snippet",
+        "tools/2015/RequiresNotNullOrEmpty.snippet",
+        "tools/install_snippets.cmd",
+        "tools/uninstall_snippets.cmd",
+        "validation.2.3.7.nupkg.sha512",
+        "validation.nuspec"
+      ]
+    },
+    "WindowsAzure.ServiceBus/3.3.2": {
+      "sha512": "u1l+SaQ1Ao+55iLrGhn3JsIws6Y6ERQCU9uuwhs6JCoqPZ0o2r3kCAnzW/bCCWlLYbJc1GVSQF8kM3ws/QUysg==",
+      "type": "package",
+      "path": "windowsazure.servicebus/3.3.2",
+      "files": [
+        "content/app.config.install.xdt",
+        "content/web.config.install.xdt",
+        "lib/net45-full/Microsoft.ServiceBus.dll",
+        "lib/net45-full/Microsoft.ServiceBus.xml",
+        "windowsazure.servicebus.3.3.2.nupkg.sha512",
+        "windowsazure.servicebus.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -9422,6 +9830,8 @@
       "Microsoft.AspNetCore >= 1.1.2",
       "Microsoft.AspNetCore.Mvc >= 1.1.3",
       "Microsoft.AspNetCore.StaticFiles >= 1.1.2",
+      "Microsoft.Diagnostics.EventFlow >= 1.1.0",
+      "Microsoft.Diagnostics.EventFlow.ServiceFabric >= 1.1.4",
       "Microsoft.Extensions.Logging.Debug >= 1.1.2",
       "Microsoft.ServiceFabric >= 5.7.198",
       "Microsoft.ServiceFabric.AspNetCore.WebListener >= 2.7.198",
@@ -9488,6 +9898,14 @@
           "Microsoft.ServiceFabric.Data": {
             "target": "Package",
             "version": "2.7.198"
+          },
+          "Microsoft.Diagnostics.EventFlow.ServiceFabric": {
+            "target": "Package",
+            "version": "1.1.4"
+          },
+          "Microsoft.Diagnostics.EventFlow": {
+            "target": "Package",
+            "version": "1.1.0"
           },
           "Microsoft.VisualStudio.Web.BrowserLink": {
             "target": "Package",

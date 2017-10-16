@@ -141,3 +141,17 @@ C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\obj\x64\D
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\obj\x64\Debug\net461\win7-x64\TechnicBirthdayAgeService.AssemblyInfo.cs
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\obj\x64\Debug\net461\win7-x64\TechnicBirthdayAgeService.exe
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\obj\x64\Debug\net461\win7-x64\TechnicBirthdayAgeService.pdb
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\eventFlowConfig.json
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Core.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.EtwUtilities.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.ApplicationInsights.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.Serilog.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.ServiceFabric.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Serilog.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\System.Threading.Tasks.Dataflow.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Validation.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicBirthdayAgeService\bin\x64\Debug\net461\win7-x64\Microsoft.ServiceBus.dll

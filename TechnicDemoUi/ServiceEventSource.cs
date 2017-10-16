@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace TechnicDemoUi
 {
-    [EventSource(Name = "MyCompany-MyCalculatorApplication-TechnicDemoUi")]
+    [EventSource(Name = "TechnicDemo-MyCalculatorApplication-TechnicDemoUi")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

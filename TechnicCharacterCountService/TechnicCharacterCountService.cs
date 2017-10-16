@@ -32,7 +32,7 @@ namespace TechnicCharacterCountService
             return new ServiceReplicaListener[]
             {
                 new ServiceReplicaListener(serviceContext =>
-                    new KestrelCommunicationListener(serviceContext, (url, listener) =>
+                    new KestrelCommunicationListener(serviceContext,"TechnicCharacterCountService", (url, listener) =>
                     {
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting Kestrel on {url}");
 

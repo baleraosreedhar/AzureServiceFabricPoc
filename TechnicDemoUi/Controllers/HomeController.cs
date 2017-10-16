@@ -79,11 +79,11 @@ namespace TechnicDemoUi.Controllers
             return View(paritionCollection);
         }
 
-        public IActionResult About(BirthdayCelebration birthday)
+        public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View(birthday);
+            return View();
         }
 
         [HttpPost]
@@ -94,17 +94,17 @@ namespace TechnicDemoUi.Controllers
             var url = getPartitionUrl(1, out inf);
             birthday = await ProcessBirthdayRequest(birthdayDate);
             birthday.CountOfGoodThought = PostProcessServiceCall(birthday.GoodThought).Result;
-
+            birthday.Birthday = birthdayDate;
             //if(model !=null)
             return RedirectToAction("Contact", "Home", birthday);
             //else
 
         }
-            public IActionResult Contact()
+            public IActionResult Contact(BirthdayCelebration birthday)
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Birthday Processing";
 
-            return View();
+            return View(birthday);
         }
 
         public IActionResult Error()

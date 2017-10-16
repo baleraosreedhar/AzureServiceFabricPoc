@@ -141,3 +141,14 @@ C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\De
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\obj\Debug\net461\win7-x64\TechnicCharacterCountService.csprojResolveAssemblyReference.cache
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\obj\Debug\net461\win7-x64\TechnicCharacterCountService.exe
 C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\obj\Debug\net461\win7-x64\TechnicCharacterCountService.pdb
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\eventFlowConfig.json
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Core.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.EtwUtilities.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.EventSource.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Inputs.Trace.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Outputs.ApplicationInsights.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.Outputs.EventHub.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\System.Threading.Tasks.Dataflow.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Validation.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.ServiceBus.dll
+C:\Sreedhar\NET CORE\MyCalculatorApplication\TechnicCharacterCountService\bin\Debug\net461\win7-x64\Microsoft.Diagnostics.EventFlow.ServiceFabric.dll

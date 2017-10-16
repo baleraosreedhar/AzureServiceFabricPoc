@@ -23,5 +23,12 @@
   <!-- Config package is the contents of the Config directoy under PackageRoot that contains an 
        independently-updateable and versioned set of custom configuration settings for your service. -->
   <ConfigPackage Name="Config" Version="1.0.0" />
+  <Resources>
+    <Endpoints>
+      <!--<Endpoint Name="ServiceEndpoint" Protocol="http"  Type="Input" Port="8082"/>-->
+      <Endpoint Name="TechnicCharacterCountService" Protocol="http" UriScheme="http" Type="Input" Port="8081" PathSuffix="MyCalculatorApplication/TechnicCharacterCountService/"/>
 
+      <!--<Endpoint Name="ServiceEndpoint" Protocol="http" Port="80" />-->
+    </Endpoints>
+  </Resources>
 </ServiceManifest>
