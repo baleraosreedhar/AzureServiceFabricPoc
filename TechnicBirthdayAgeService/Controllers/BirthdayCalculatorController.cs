@@ -14,12 +14,25 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.ServiceFabric.Services.Client;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using TechnicBirthdayAgeService.Infrastructure;
+using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
 
 namespace TechnicBirthdayAgeService.Controllers
 {
     [Route("api/[controller]")]
     public class BirthdayCalculatorController : Controller
     {
+        private readonly CatalogContext _catalogContext;
+        private readonly CatalogSettings _settings;
+        public BirthdayCalculatorController(CatalogContext context, IOptionsSnapshot<CatalogSettings> settings)
+        {
+            _catalogContext = context ?? throw new ArgumentNullException(nameof(context));
+           
+            _settings = settings.Value;
+            ((DbContext)context).ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+        }
+
         /// <summary>
         /// Get operation
         /// </summary>
@@ -44,21 +57,29 @@ namespace TechnicBirthdayAgeService.Controllers
             BirthdayCelebration birthdayResult = null; ;
             DateTime birthDate = DateTime.MinValue;
             try
-            { 
-            birthDate = Convert.ToDateTime(birthdatevalue);
+            {
+                //if (DateTime.TryParseExact(birthdatevalue, "MM/dd/yyyy", null, System.Globalization.DateTimeStyles.None, out birthDate))
+                //{
+
+                //}
+                birthDate = Convert.ToDateTime(birthdatevalue);
                 if (birthDate > DateTime.MinValue)
                 {
                     birthdayResult = new BirthdayCelebration(birthDate);
                     birthdayResult.CountOfGoodThought = (birthdayResult.GoodThought).Length;
                     //birthdayResult.CountOfGoodThought = GetCountOfThoughtsFromWordCountServiceAsync(birthdayResult.GoodThought).Result;
+                    birthdayResult.CountOfCatalogItems = _catalogContext.CatalogItems.LongCountAsync().Result.ToString();
+                    
                     return Ok(birthdayResult);
                 }
                 else
                 {
                     return StatusCode(400, new BirthdayCelebration("Invalid Date"));
                 }
+              
+               
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return StatusCode(400, new BirthdayCelebration(ex.Message));
             }
