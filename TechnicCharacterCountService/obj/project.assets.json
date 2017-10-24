@@ -9727,11 +9727,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Sreedhar\\NET CORE\\MyCalculatorApplication\\TechnicCharacterCountService\\TechnicCharacterCountService.csproj",
+      "projectUniqueName": "C:\\Sreedhar\\NET CORE\\AzureServiceFabricPOC\\TechnicCharacterCountService\\TechnicCharacterCountService.csproj",
       "projectName": "TechnicCharacterCountService",
-      "projectPath": "C:\\Sreedhar\\NET CORE\\MyCalculatorApplication\\TechnicCharacterCountService\\TechnicCharacterCountService.csproj",
+      "projectPath": "C:\\Sreedhar\\NET CORE\\AzureServiceFabricPOC\\TechnicCharacterCountService\\TechnicCharacterCountService.csproj",
       "packagesPath": "C:\\Users\\sbalerao\\.nuget\\packages\\",
-      "outputPath": "C:\\Sreedhar\\NET CORE\\MyCalculatorApplication\\TechnicCharacterCountService\\obj\\",
+      "outputPath": "C:\\Sreedhar\\NET CORE\\AzureServiceFabricPOC\\TechnicCharacterCountService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

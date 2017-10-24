@@ -1,0 +1,9 @@
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\bin\Debug\netstandard2.0\MyCalculator.Utills.deps.json
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\bin\Debug\netstandard2.0\MyCalculator.Utills.dll
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\bin\Debug\netstandard2.0\MyCalculator.Utills.pdb
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.csprojResolveAssemblyReference.cache
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.csproj.CoreCompileInputs.cache
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.AssemblyInfoInputs.cache
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.AssemblyInfo.cs
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.dll
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyCalculator.Utills\obj\Debug\netstandard2.0\MyCalculator.Utills.pdb

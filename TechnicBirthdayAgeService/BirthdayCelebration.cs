@@ -5,6 +5,14 @@ using System.Threading.Tasks;
 
 namespace TechnicBirthdayAgeService
 {
+    public enum AgeGroupCategory
+    {
+        Tween,
+        Teenager,
+        Young,
+        Middle,
+        Awesome
+    }
     public class BirthdayCelebration
     {
         private List<string> thoughtsCollection = new List<string>();
@@ -43,6 +51,11 @@ namespace TechnicBirthdayAgeService
             }
         }
         public string ExceptionMessage { get { return exceptionMessage; } }
+
+        public string AgeGroup { get; set; }
+
+        public string CountOfCatalogItems { get; set; }
+
         private void Process()
         {
             age = DateTime.Now.Year-birthday.Year ;
@@ -51,28 +64,28 @@ namespace TechnicBirthdayAgeService
                 age--;
             }
 
-           // thoughtsCollection.Shuffle();
+            // thoughtsCollection.Shuffle();
 
-            //if (age < 10)
-            //{
-            //    AgeGroup = AgeGroupCategory.Tween;
-            //}
-            //else if (age >= 10 && age < 20)
-            //{
-            //    AgeGroup = AgeGroupCategory.Teenager;
-            //}
-            //else if (age >= 20 && age < 35)
-            //{
-            //    AgeGroup = AgeGroupCategory.Young;
-            //}
-            //else if (age >= 35 && age < 50)
-            //{
-            //    AgeGroup = AgeGroupCategory.Middle;
-            //}
-            //else
-            //{
-            //    AgeGroup = AgeGroupCategory.Good;
-            //}
+            if (age < 10)
+            {
+                AgeGroup = AgeGroupCategory.Tween.ToString();
+            }
+            else if (age >= 10 && age < 20)
+            {
+                AgeGroup = AgeGroupCategory.Teenager.ToString();
+            }
+            else if (age >= 20 && age < 35)
+            {
+                AgeGroup = AgeGroupCategory.Young.ToString();
+            }
+            else if (age >= 35 && age < 50)
+            {
+                AgeGroup = AgeGroupCategory.Middle.ToString();
+            }
+            else
+            {
+                AgeGroup = AgeGroupCategory.Awesome.ToString();
+            }
         }
         private void PopulateThoughts()
         {
