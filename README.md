@@ -16,5 +16,9 @@ Testing: Open Postman app on chrome and invoke the age service as
 http://Domain.eastus.cloudapp.azure.com:19081/MyCalculatorApplication/TechnicBirthdayAgeService/api/BirthdayCalculator/Calculate?PartitionKind=Int64Range&PartitionKey=1
 and in the Body of the request pass in Key:birthdayvalye and Value: Valid Birthdate
 
+Added Environment variable handling, setting up environment, so that the specific app settings json could be loaded.
+
+Unit test project to test the health of the fabric.
+
 
 

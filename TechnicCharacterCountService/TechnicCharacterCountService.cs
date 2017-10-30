@@ -32,10 +32,17 @@ namespace TechnicCharacterCountService
             return new ServiceReplicaListener[]
             {
                 new ServiceReplicaListener(serviceContext =>
+
                     new KestrelCommunicationListener(serviceContext,"TechnicCharacterCountService", (url, listener) =>
                     {
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting Kestrel on {url}");
-
+                         var config = serviceContext.CodePackageActivationContext.GetConfigurationPackageObject("Config");
+              
+                        // Read environment from config files
+                       var environment = FabricRuntime.GetActivationContext()?
+                    .GetConfigurationPackageObject("Config")?
+                    .Settings.Sections["Environment"]?
+                    .Parameters["ASPNETCORE_ENVIRONMENT"]?.Value;
                         return new WebHostBuilder()
                                     .UseKestrel()
                                     .ConfigureServices(
@@ -43,7 +50,8 @@ namespace TechnicCharacterCountService
                                             .AddSingleton<StatefulServiceContext>(serviceContext)
                                             .AddSingleton<IReliableStateManager>(this.StateManager))
                                     .UseContentRoot(Directory.GetCurrentDirectory())
-                                    .UseStartup<Startup>()
+                                    .UseStartup<Startup>() 
+                                    .UseEnvironment(environment) // use the appropriate environment
                                     .UseApplicationInsights()
                                     .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.UseUniqueServiceUrl)
                                     .UseUrls(url)

@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/FabricTest/obj/Debug
+/MyCalculatorApplication/pkg/Debug
+/MyCalculatorApplication/pkg/Debug
+/MuUtils/obj/Debug
+/TechnicBirthdayAgeService/bin
+/TechnicBirthdayAgeService/obj
+/TechnicCharacterCountService/bin
+/TechnicCharacterCountService/obj
+/TechnicDemoUi/bin
+/TechnicDemoUi/obj

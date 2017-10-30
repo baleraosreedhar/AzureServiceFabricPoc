@@ -32,17 +32,17 @@ namespace TechnicBirthdayAgeService
             return new ServiceReplicaListener[]
             {
                 new ServiceReplicaListener(serviceContext =>
-                    new KestrelCommunicationListener(serviceContext,"TechnicBirthdayAgeService", (url, listener) =>
+                    new KestrelCommunicationListener(serviceContext,"TechnicCharacterCountServiceEndpoint", (url, listener) =>
                     {
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting Kestrel on {url}");
-
+                         //.UseHealthChecks("/hc")
                         return new WebHostBuilder()
                                     .UseKestrel()
                                     .ConfigureServices(
                                         services => services
                                             .AddSingleton<StatefulServiceContext>(serviceContext)
                                             .AddSingleton<IReliableStateManager>(this.StateManager))
-                                             //.UseHealthChecks("/hc")
+                                            
                                     .UseContentRoot(Directory.GetCurrentDirectory())
                                     .UseStartup<Startup>()
                                     .UseApplicationInsights()
