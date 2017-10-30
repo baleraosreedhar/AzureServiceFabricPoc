@@ -86,15 +86,12 @@ namespace TechnicBirthdayAgeService
                     Version = "v1",
                     Description = "A simple example ASP.NET Core Web API",
                     TermsOfService = "None"
-                })
+                });
 
-                ;
+                
                 option.IgnoreObsoleteActions();
-
                 option.DescribeAllParametersInCamelCase();
                 option.OrderActionsBy(apiDesc => apiDesc.HttpMethod.ToString());
-
-
                 option.DescribeAllEnumsAsStrings();
             });
 
@@ -162,16 +159,23 @@ namespace TechnicBirthdayAgeService
             //});
 
             app.UseMvc();
-            // Enable middleware to serve generated Swagger as a JSON endpoint. 
-            app.UseSwagger(c =>
-            {
-                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/MyCalculatorApplication/TechnicBirthdayAgeService");
-            });
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/MyCalculatorApplication/TechnicBirthdayAgeService/swagger/v1/swagger.json", "My Birthday Service");
-            });
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+
+            app.UseSwagger()
+             .UseSwaggerUI(c =>
+             {
+                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+             });
+
+            ////app.UseSwagger(c =>
+            ////{
+            ////    c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/MyCalculatorApplication/TechnicBirthdayAgeService");
+            ////});
+            ////// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            ////app.UseSwaggerUI(c =>
+            ////{
+            ////    c.SwaggerEndpoint("/MyCalculatorApplication/TechnicBirthdayAgeService/swagger/v1/swagger.json", "My Birthday Service");
+            ////});
         }
     }
 }

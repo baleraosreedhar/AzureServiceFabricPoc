@@ -1,9 +1,9 @@
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.deps.json
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.dll
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.pdb
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.csprojResolveAssemblyReference.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.csproj.CoreCompileInputs.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.AssemblyInfoInputs.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.AssemblyInfo.cs
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.deps.json
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.dll
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\bin\Debug\netcoreapp2.0\MyUtils.pdb
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.dll
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\MyUtils\obj\Debug\netcoreapp2.0\MyUtils.pdb

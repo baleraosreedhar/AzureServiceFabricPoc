@@ -36,7 +36,9 @@ namespace TechnicDemoUi
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting WebListener on {url}");
 
                         return new WebHostBuilder()
-                                    .UseWebListener()
+                        .UseHttpSys()
+                       // .UseKestrel()
+                                   // not working .UseWebListener()
                                     .ConfigureServices(
                                         services => services
                                             .AddSingleton<StatelessServiceContext>(serviceContext))

@@ -1,9 +1,9 @@
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.deps.json
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.dll
+C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.pdb
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.csprojResolveAssemblyReference.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.csproj.CoreCompileInputs.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.AssemblyInfoInputs.cache
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.AssemblyInfo.cs
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.deps.json
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.dll
-C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\bin\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.pdb
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.dll
 C:\Sreedhar\NET CORE\AzureServiceFabricPOC\TechnicBirthdayAgeService.Repository\obj\Debug\netcoreapp2.0\TechnicBirthdayAgeService.Repository.pdb

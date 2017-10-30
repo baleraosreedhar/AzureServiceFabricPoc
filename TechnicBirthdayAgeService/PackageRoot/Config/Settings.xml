@@ -6,4 +6,8 @@
     <Parameter Name="MyParameter" Value="Value1" />
   </Section>
   -->
+ <!-- Add your custom configuration sections and parameters here -->
+  <Section Name="Environment">
+    <Parameter Name="ASPNETCORE_ENVIRONMENT" Value="Development" />
+  </Section>
 </Settings>
